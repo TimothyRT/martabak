@@ -1,0 +1,289 @@
+*{
+  color: #000;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3Csvg width='3.5' height='3.5' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300439d' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+/* https://codepen.io/johnmeade-webdev/pen/eYmeLxN */
+
+center {
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 25px;
+}
+
+h3 {
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+hr {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.navbar-brand img{
+  width: 200px;
+  margin-left: 15px;
+}
+.navbar.navbar-custom {
+  background-color: #f2D3B6;
+}
+.btn.btn-custom{
+  background-color: #fff;
+  border: 2px;
+  width: 110px;
+}
+.btn.btn-custom:hover{
+  background-color:#d2b192;
+  color: #fff;
+}
+.btn.btn-custom.login{
+  margin-left: 10px;
+  
+}
+.nav-item{
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-item:hover {
+  background-color: #fff;
+  color: #f2d3b6;
+}
+.custom-input {
+  border-color: #f2d3b6; /* Set the outline color */
+}
+form.d-flex{
+  margin-right: 5%;
+}
+form.d-flex input{
+  border-radius: 20px;
+}
+form.d-flex button{
+  width: 40vh;
+  border-radius: 20px;
+}
+/* Footer CSS */
+.card {
+  background-color: #f2d3b6;
+}
+.card-body{
+  padding:  5vh 10vh;
+  display: flex;
+}
+.card-body a img{
+  width: 60%;
+}
+.container.text-center .row{
+  display: flex;
+}
+.about-content{
+  text-align: left;
+}
+.about-content h3{
+  display: inline-block;
+}
+.about-content ul li{
+  list-style: none;
+  display: flex;
+}
+.about-content ul li a{
+  text-decoration: none;
+  color: #000;
+}
+.contact-content ul li{
+  list-style: none;
+}
+.contact-content ul li a{
+  text-decoration: none;
+  color: #000;
+}
+/* Carousel CSS */
+#carouselExampleIndicators{
+  margin: 5vh 10vh;
+  justify-content: center;
+}
+.carousel-item img {
+  border-radius: 20px;
+}
+
+/* Content CSS */
+
+.main-content .text-martabak{
+  text-align: center;
+}
+
+.btn.custom {
+  background-color: #f2d3b6;
+  color: #000;
+  display: grid; 
+  place-items: center; 
+  margin: 0 auto; 
+  margin-top: 20px; 
+  max-width: 200px; 
+  margin:  4% auto;
+}
+
+.btn.custom:hover{
+  background-color: #fff;
+  color: #000;
+  border-color: #000 ;
+}
+
+.contact{
+  margin: 20px 15px;
+}
+
+.contact .contact-message {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact .contact-message .left-contact,
+.contact .contact-message .right-contact {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.contact .contact-message .left-contact input,
+.contact .contact-message .right-contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #f2d3b6;
+  box-sizing: border-box;
+}
+
+.contact .contact-message .right-contact textarea {
+  resize: vertical;
+}
+
+.send-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.send {
+  background-color: #f2D3B6; /* Set the background color to the domain color */
+  color: #000; /* Set the text color to black for better contrast */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.send:hover {
+  background-color: #e0bba3; /* Darken the domain color slightly on hover */
+  color: #fff; /* Change text color to white for better visibility on hover */
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f2d3b6;
+  padding: 2rem 0;
+}
+
+.footer-logo {
+  width: 60%;
+}
+
+footer a.nav-link {
+  color: #2a2625;
+}
+footer a.nav-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column:not(:first-child) {
+    padding-top: 2rem;
+    @media (min-width: 768px) {
+      padding-top: 0rem;
+    }
+  }
+
+.footer-column {
+  text-align: center;
+  .footer-nav-item {
+    .nav-link {
+      padding: 0.1rem 0;
+    }
+    span.nav-link {
+      color: #2a2625;
+    }
+    span.footer-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2a2625;
+      text-transform: uppercase;
+    }
+    .fas {
+      margin-right: 0.5rem;
+    }
+  }
+  ul {
+    display: inline-block;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: $primary-orange;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  border-radius: 100%;
+  outline: 0;
+}
+
+footer .quick-links {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer .quick-links a {
+  color: #35301e;
+}
+
+.copyright {
+  margin-top: 5rem;
+  color: #35301e;
+}
+
+.fa-ellipsis-h {
+  color: #35301e;
+  padding: 2rem 0;
+}
