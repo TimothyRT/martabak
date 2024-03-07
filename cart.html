@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keranjang Belanja</title>
+    <link rel="icon" type="image/x-icon" href="assets/MartabakIcon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- JS Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/LogoMartabak - BLACK.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stores.html">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rewards.html">Rewards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-custom search" type="submit">Search</button>
+            <button class="btn btn-custom login" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="cart-whitespace"></div>
+
+    <!-- Cart -->
+    <div class="center-container thick">
+
+      <main class="cart-container">
+        <div class="cart-table-container">
+          <table class="table table-striped table-hover cart-table">
+            <thead>
+              <tr>
+                <th>ITEMS</th>
+                <th>QTY</th>
+                <th colspan="2">SUBTOTAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cart-content-ite">
+                  <p>Martabak Blueberry</p>
+                </td>
+
+                <td class="cart-content-qty">
+                  <span class="cart-content-qty-select">
+                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+
+                    <input type="number" min="1" value="1">
+                    
+                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                  </span>
+                </td>
+
+                <td class="cart-content-subt">
+                  Rp20.000,-
+                </td>
+
+                <td>
+                  <button class="fa fa-trash"></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a class="general-link general-arrow"  href="menu.html">
+            <strong>Lanjutkan berbelanja</strong>
+          </a>
+        </div>
+        
+        <section class="cart-box">
+          <h2>Subtotal</h2>
+          <h3>Gratis</h3>
+
+          <label for="order-note">Order Note (Optional)</label>
+          <textarea id="order-note" rows="3" cols="1" placeholder="Misal: banyakin coklatnya, ya"></textarea>
+
+          <hr class="solid">
+
+          <label for="order-note"><strong>Isi alamat lengkap</strong></label>
+          <textarea id="order-note" rows="3" cols="1" required></textarea>
+          
+          <a class="general-button general-link" href="#" role="button" type="submit">
+            <strong>Lanjutkan</strong>
+          </a>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="cart-whitespace"></div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <img class="footer-logo" src="assets/LogoMartabak - BLACK.png">
+          </div>
+  
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="footer-nav-item">
+                <span class="footer-title">The Pilgrim</span>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="stores.html">Stores</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="rewards.html">Rewards</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="footer-nav-item">
+                <span class="footer-title">Kontak</span>
+              </li>
+              <li class="footer-nav-item">
+                <span class="nav-link">
+                  <i class="fa fa-phone"></i> +62 896-17548012
+                </span>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i> martabak_pilgrim
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="https://www.facebook.com/" target="_blank">
+                  <i class="fa-brands fa-facebook"></i> Martabak Pilgrim
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-center">
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        
+        <div class="row text-center">
+          <div class="col-md-4 box">
+            <span class="copyright quick-links">Copyright &copy <script>document.write(new Date().getFullYear())</script>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="reveal.js"></script>
+  </body>
+</html>

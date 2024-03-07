@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerai Kami</title>
+    <link rel="icon" type="image/x-icon" href="assets/MartabakIcon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ionicon CSS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- JS Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/LogoMartabak - BLACK.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stores.html">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rewards.html">Rewards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-custom search" type="submit">Search</button>
+            <button class="btn btn-custom login" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Top bar -->
+    <div class="container-fluid mt-3 top-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Stores</li>
+      </ul>
+      <h2>Gerai Martabak Pilgrim</h2>
+    </div>
+    
+    <!-- Content -->
+    <div class="stores-header container mt-5">
+      <!-- Deskripsi -->
+      <h2 class="text-lg">Kunjungi gerai kami</h2>
+      <p class="text-lg">Kami berupaya mempermudah hidup Anda. Gerai kami yang terus berkembang tersebar di seluruh Indonesia, di mana Anda bisa memanjakan diri atau menghabiskan waktu bersama orang-orang terkasih menikmati martabak berkualitas dunia.</p>
+      <hr>
+    </div>
+
+    <div class="store-content container">
+      <button class="list-group list-group-item collapsed" data-bs-toggle="collapse" data-bs-target="#loc-sidebar" style="width: 100%;" aria-expanded="false">Semua</button>
+      <ul class="list-group collapse" id="loc-sidebar">
+        <button class="list-group-item">Pekanbaru</button>
+        <button class="list-group-item">Bali</button>
+        <button class="list-group-item">Bandung</button>
+        <button class="list-group-item">Jakarta</button>
+      </ul>
+
+      <!-- Pekanbaru -->
+      <div class="card card-location pekanbaru-store">
+        <img class="card-img-top" src="assets/Mal-Pekanbaru.jpg" alt="The Pilgrim Pekanbaru">
+        <div class="card-body">
+          <h4 class="card-title">The Pilgrim Pekanbaru</h4>
+          <p class="card-text">
+            Jl. Jend. Sudirman No.123, Kota Tinggi, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28112
+          </p>
+          <p>
+            <ion-icon name="call"></ion-icon>
+            &nbsp;(0761) 853123
+          </p>
+          <p>
+            <ion-icon name="navigate"></ion-icon>
+            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/eKTjtJXXxMcxJFn9A">View Location</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Jakarta -->
+      <div class="card card-location jakarta-store">
+        <img class="card-img-top" src="assets/MOI.jpg" alt="The Pilgrim MOI">
+        <div class="card-body">
+          <h4 class="card-title">The Pilgrim MOI</h4>
+          <p class="card-text">
+            Jl. Boulevard Bar. Raya No.12, RT.18/RW.19, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240
+          </p>
+          <p>
+            <ion-icon name="call"></ion-icon>
+            &nbsp;(0761) 962125
+          </p>
+          <p>
+            <ion-icon name="navigate"></ion-icon>
+            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/c6a8ZCqTuB5NGDR19">View Location</a>
+          </p>
+        </div>
+      </div> 
+
+      <!-- Bali -->
+      <div class="card card-location bali-store">
+        <img class="card-img-top" src="assets/Beachwalk.jpg" alt="The Pilgrim Beachwalk Bali">
+        <div class="card-body">
+          <h4 class="card-title">The Pilgrim Beachwalk Bali</h4>
+          <p class="card-text">
+            Jl. Pantai Kuta, Kuta, Kec. Kuta Sel., Kabupaten Badung, Bali 80361
+          </p>
+          <p>
+            <ion-icon name="call"></ion-icon>
+            &nbsp;(0361) 868124
+          </p>
+          <p>
+            <ion-icon name="navigate"></ion-icon>
+            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/xmMD1Ao2uZ1TQrsFA">View Location</a>
+          </p>
+        </div>
+      </div> 
+  
+      <!-- Bandung -->
+      <div class="card card-location bandung-store">
+        <img class="card-img-top" src="assets/Bandung.jpg" alt="The Pilgrim FCL Bandung">
+        <div class="card-body">
+          <h4 class="card-title">The Pilgrim FCL Bandung</h4>
+          <p class="card-text">
+            Jl. Peta No.241, Suka Asih, Kec. Bojongloa Kaler, Kota Bandung, Jawa Barat 40232
+          </p>
+          <p>
+            <ion-icon name="call"></ion-icon>
+            &nbsp;(022) 6328595
+          </p>
+          <p>
+            <ion-icon name="navigate"></ion-icon>
+            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/7skHE5eZ8RfZCpQs5">View Location</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="bottom-whitespace"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <img class="footer-logo" src="assets/LogoMartabak - BLACK.png">
+          </div>
+  
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="footer-nav-item">
+                <span class="footer-title">The Pilgrim</span>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="stores.html">Stores</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="rewards.html">Rewards</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="footer-nav-item">
+                <span class="footer-title">Kontak</span>
+              </li>
+              <li class="footer-nav-item">
+                <span class="nav-link">
+                  <i class="fa fa-phone"></i> +62 896-17548012
+                </span>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i> martabak_pilgrim
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="nav-link" href="https://www.facebook.com/" target="_blank">
+                  <i class="fa-brands fa-facebook"></i> Martabak Pilgrim
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-center">
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        
+        <div class="row text-center">
+          <div class="col-md-4 box">
+            <span class="copyright quick-links">Copyright &copy <script>document.write(new Date().getFullYear())</script>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <script src="reveal.js"></script>
+  </body>
+</html>
