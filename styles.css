@@ -44,8 +44,9 @@ body {
   display: inline;
 
   &:not(:first-of-type)::before {
-      color: var(--main-text-color);
-      content: "> ";
+        color: var(--main-text-color);
+        font-family: "Font Awesome 5 Free";
+        content: "\3e\00a0";
   }
 }
 
@@ -451,6 +452,7 @@ footer a.nav-link {
     max-width: 450px;
     justify-content: center;
 } */
+
 /* *************************** */
 /* GRACIA */
 /* *************************** */
