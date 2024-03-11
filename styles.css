@@ -46,8 +46,7 @@ body {
 
 .top-bar li:not(:first-of-type)::before {
     color: var(--main-text-color);
-    font-family: "Font Awesome 5 Free";
-    content: "\3e\00a0";
+    content: "> ";
 }
 
 }
@@ -466,19 +465,18 @@ footer a.nav-link {
   color: var(--main-text-color);
   padding: 5px;
   text-align: center;
+}
 
-  &::before, &::after {
+.menu-heading::before {  /* must be separate from above and below for Safari compatibility */
     color: white;
     content: "◇";
-  }
-
-  &::before {
     float: left;
-  }
+}
 
-  &::after {
+.menu-heading::after {  /* must be separate from above and below for Safari compatibility */
+    color: white;
+    content: "◇";
     float: right;
-  }
 }
 
 /* General Martabak */
@@ -667,6 +665,7 @@ textarea {
 .general-button {
     background-color: var(--highlight-bg-color);
     border-radius: 20px;
+    color: var(--main-text-color);
     cursor: pointer;
     font-size: 10pt;
     margin: 0.8rem 0;
@@ -804,6 +803,13 @@ textarea {
     flex-grow: 3;
     margin: 1rem auto;
     padding: 10%;
+}
+
+.rewards-card-info .general-button-short {
+    border-radius: 5rem;
+    display: block;
+    margin: 0.5rem auto 0;
+    text-align: center;
 }
 
 .rewards-info-starry {
