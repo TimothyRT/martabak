@@ -216,7 +216,12 @@ form.d-flex button{
 }
 
 /* Carousel CSS */
-    #carouselExampleIndicators{
+.carousel-container {
+    display: block;
+    width: 90%;
+}
+
+#carouselExampleIndicators{
     margin: 5vh 10vh;
     justify-content: center;
 }
@@ -230,7 +235,7 @@ form.d-flex button{
 @media (max-width: 768px) { 
     .carousel .carousel-inner .item {
         height: 500px;
-        width: 85%;
+        width: 100%;
     }
 }
 
