@@ -230,6 +230,7 @@ form.d-flex button{
 @media (max-width: 768px) { 
     .carousel .carousel-inner .item {
         height: 500px;
+        width: 85%;
     }
 }
 
