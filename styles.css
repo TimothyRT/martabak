@@ -221,8 +221,16 @@ form.d-flex button{
     justify-content: center;
 }
 
+/* https://stackoverflow.com/questions/66834515/bootstrap-carousel-shrinks-the-images-on-mobile */
 .carousel-item img {
     border-radius: 20px;
+    min-width: 800px;
+}
+
+@media (max-width: 768px) { 
+    .carousel .carousel-inner .item {
+        height: 500px;
+    }
 }
 
 /* Content CSS */
