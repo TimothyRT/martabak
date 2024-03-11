@@ -216,10 +216,6 @@ form.d-flex button{
 }
 
 /* Carousel CSS */
-.carousel-container {
-    display: block;
-}
-
 #carouselExampleIndicators{
     margin: 5vh 10vh;
     justify-content: center;
@@ -228,14 +224,6 @@ form.d-flex button{
 /* https://stackoverflow.com/questions/66834515/bootstrap-carousel-shrinks-the-images-on-mobile */
 .carousel-item img {
     border-radius: 20px;
-    min-width: 800px;
-}
-
-@media (max-width: 768px) { 
-    .carousel .carousel-inner .item {
-        height: 152px;
-        width: 304px;
-    }
 }
 
 /* Content CSS */
