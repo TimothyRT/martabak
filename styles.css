@@ -790,8 +790,8 @@ textarea {
 
 .rewards-main-container {
     display: grid;
-    grid-template-columns: [col1] 20% [col2] 80%;
     grid-gap: 1rem;
+    grid-template-columns: [col1] 20% [col2] 80%;
     grid-template-rows: [row1] 47% [row2] 47%;
 }
 
@@ -800,7 +800,6 @@ textarea {
     border-radius: 10px;
     color: var(--main-text-color);
     box-shadow: none;
-    flex-grow: 3;
     margin: 1rem auto;
     padding: 10%;
 }
