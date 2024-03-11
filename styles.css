@@ -35,19 +35,21 @@ body {
 }
 
 .top-bar li>a {
-  color: var(--box-border-color);
-  text-decoration: none;
+    color: var(--box-border-color);
+    text-decoration: none;
 }
 
 .top-bar li {
-  color: black;
-  display: inline;
+    color: black;
+    display: inline;
+}
 
-  &:not(:first-of-type)::before {
-        color: var(--main-text-color);
-        font-family: "Font Awesome 5 Free";
-        content: "\3e\00a0";
-  }
+.top-bar li:not(:first-of-type)::before {
+    color: var(--main-text-color);
+    font-family: "Font Awesome 5 Free";
+    content: "\3e\00a0";
+}
+
 }
 
 .top-bar h2 {
