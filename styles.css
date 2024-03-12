@@ -211,8 +211,17 @@ form.d-flex button{
 }
 
 /* Footer CSS */
-    .main-content-image .container.text-center .row{
+.main-content-image .container.text-center .row {
     display: flex;
+}
+
+.footer-title {  /* Safari compatibility */
+    font-weight: 650;
+}
+
+.nav-link {  /* Safari compatibility */
+    color: #2a2625;
+    text-decoration: none;
 }
 
 /* Carousel CSS */
@@ -370,22 +379,7 @@ footer a.nav-link {
   height: 40px;
 }
 
-/* Stores */
-
-.stores-header>h2 {
-  background-color: var(--highlight-bg-color);
-  border-radius: 1.5rem;
-  color: var(--main-text-color);
-  font-size: 1.6rem;
-  font-weight: bold;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-
-  &::before, &::after {
-    content: " ৹ ";
-  }
-}
-
+/* Stores (OLD) */
 .stores-header>p {
   color: var(--main-text-color);
   font-style: italic;
@@ -407,53 +401,6 @@ footer a.nav-link {
 .store-content .bottom-whitespace {
   height: 100px;
 }
-
-/* .store-content{
-    display: flex;
-    align-content: start;
-    margin-top: 0;
-}
-
-.city-switcher.btn-group-vertical.custom{
-    width: 200px;
-    height: 100px;
-}
-
-.city-switcher>.btn.custom {
-    border: 0.5px solid rgb(217, 217, 217);
-    text-align: left;
-    padding-left: 10px;
-}
-
-.city-switcher>.btn.custom.main{
-    background-color: #f2D3B6;
-}
-
-.locations.row{
-    justify-content: end;
-}
-
-.locations>.col-2{
-    width: 400px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    border: 1px solid;
-    border-radius: 20px;
-}
-.locations>.col-2>img{
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
-} */
-
-/* .store-sidebar .pekanbaru-store, .jakarta-store, .bali-store, .bandung-store{
-    margin: 10px 0;
-} */
-
-/* .store-locations img {
-    max-width: 450px;
-    justify-content: center;
-} */
 
 /* *************************** */
 /* GRACIA */
@@ -681,6 +628,27 @@ textarea {
 .general-arrow::after {
     content: ">";
 }
+
+.minx-header {
+    background-color: var(--highlight-bg-color);
+    border-radius: 1.5rem;
+    color: var(--main-text-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.minx-header::before, .minx-header::after {
+    content: " ৹ ";
+}
+
+.minx-desc {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Search */
 
 /* Account (register & login) */
 
@@ -1073,5 +1041,132 @@ button.fa-trash {
 }
 
 /* *************************** */
-/* https://www.shapedivider.app/ */
+/* Erin */
 /* *************************** */
+
+/* Stores (NEW) */
+
+.stores-container {
+    display: grid;
+    grid-template-areas: 
+        "chooser . infobox";
+    grid-template-columns: [col1] 40% [col2] 5% [col3] auto;
+    grid-template-rows: [row1] 100%;
+}
+
+.stores-container>.erinslist {
+    grid-area: chooser;
+}
+
+.stores-container>.erinslist ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #f1f1f1;
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    box-shadow: 
+    0.1em 0.1em 0.1em var(--main-text-color);
+}
+  
+.stores-container>.erinslist li a {
+    display: block;
+    color: var(--main-text-color);
+    padding: 8px 5%;
+    text-decoration: none;
+}
+  
+.stores-container>.erinslist li {
+    text-align: left;
+    border-bottom: 1px solid var(--highlight-dark-bg-color);
+}
+
+.stores-container>.erinslist li a.active {
+    background-color: var(--highlight-dark-bg-color);
+    color: var(--main-text-color);
+}
+
+.stores-container>.erinslist li a:hover:not(.active) {
+    background-color: var(--highlight-dark-bg-color);
+    color: var(--main-text-color);
+}
+
+.stores-container>.infobox-container {
+    /* background-color: yellow; */
+    padding: 0 0 0 3%;
+    grid-area: infobox;
+}
+
+.stores-container .infobox {
+    background-color: var(--container-bg-color);
+    /* border: 1px solid gray; */
+    box-shadow: 
+    0 0 0 1px var(--main-text-color),
+    0.2em 0.2em 0.2em var(--main-text-color);
+    border-radius: 0.8rem;
+    padding: 4% 0 2% 0;
+}
+
+.stores-container .infobox>h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.stores-container .infobox img {
+    margin: 0.3rem 0 0.5rem;
+    width: 100%;
+
+    &:hover {
+        -webkit-transform: scale(1.05,1.05);
+    }
+}
+
+.stores-container .infobox-data {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% auto;
+    grid-template-areas: 
+        "a-icon alamat"
+        "t-icon telp";
+    margin: 0 auto;
+    width: 97%;
+}
+
+.stores-container .infobox-data .fa-house {
+    grid-area: a-icon;
+    margin: 0.5rem auto;
+}
+
+.stores-container .infobox-data .fa-phone {
+    grid-area: t-icon;
+    margin: 0.4rem auto;
+}
+
+.stores-container .infobox-data .address {
+    /* background-color: red; */
+    grid-area: alamat;
+}
+
+.stores-container .infobox-data .phone-num {
+    /* background-color: yellow; */
+    grid-area: telp;
+}
+
+@media (max-width: 50rem) {
+
+    .stores-container {
+        grid-template-columns: [col1] 30% [col2] 0% [col3] auto;
+    }
+
+    .stores-container .infobox>h2 {
+        font-size: 1.1rem;
+    }
+
+    .stores-container .infobox-data {
+        grid-template-columns: 20% auto;
+    }
+}
+
+.whitespace {
+    height: 100px;
+}

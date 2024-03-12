@@ -60,100 +60,43 @@
     </div>
     
     <!-- Content -->
-    <div class="stores-header container mt-5">
-      <!-- Deskripsi -->
-      <h2 class="text-lg">Kunjungi gerai kami</h2>
-      <p class="text-lg">Kami berupaya mempermudah hidup Anda. Gerai kami yang terus berkembang tersebar di seluruh Indonesia, di mana Anda bisa memanjakan diri atau menghabiskan waktu bersama orang-orang terkasih menikmati martabak berkualitas dunia.</p>
-      <hr>
-    </div>
-
-    <div class="store-content container">
-      <button class="list-group list-group-item collapsed" data-bs-toggle="collapse" data-bs-target="#loc-sidebar" style="width: 100%;" aria-expanded="false">Semua</button>
-      <ul class="list-group collapse" id="loc-sidebar">
-        <button class="list-group-item">Pekanbaru</button>
-        <button class="list-group-item">Bali</button>
-        <button class="list-group-item">Bandung</button>
-        <button class="list-group-item">Jakarta</button>
-      </ul>
-
-      <!-- Pekanbaru -->
-      <div class="card card-location pekanbaru-store">
-        <img class="card-img-top" src="assets/Mal-Pekanbaru.jpg" alt="The Pilgrim Pekanbaru">
-        <div class="card-body">
-          <h4 class="card-title">The Pilgrim Pekanbaru</h4>
-          <p class="card-text">
-            Jl. Jend. Sudirman No.123, Kota Tinggi, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28112
-          </p>
-          <p>
-            <ion-icon name="call"></ion-icon>
-            &nbsp;(0761) 853123
-          </p>
-          <p>
-            <ion-icon name="navigate"></ion-icon>
-            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/eKTjtJXXxMcxJFn9A">View Location</a>
-          </p>
-        </div>
+    <div class="center-container thick">
+      <!-- Deskripsi Atas -->
+      <div class="stores-header container mt-5">
+        <h2 class="minx-header text-lg">Kunjungi gerai kami</h2>
+        <p class="minx-desc text-lg">Kami berupaya mempermudah hidup Anda. Gerai kami yang terus berkembang tersebar di seluruh Indonesia, di mana Anda bisa memanjakan diri atau menghabiskan waktu bersama orang-orang terkasih menikmati martabak berkualitas dunia.</p>
+        <hr>
       </div>
 
-      <!-- Jakarta -->
-      <div class="card card-location jakarta-store">
-        <img class="card-img-top" src="assets/MOI.jpg" alt="The Pilgrim MOI">
-        <div class="card-body">
-          <h4 class="card-title">The Pilgrim MOI</h4>
-          <p class="card-text">
-            Jl. Boulevard Bar. Raya No.12, RT.18/RW.19, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240
-          </p>
-          <p>
-            <ion-icon name="call"></ion-icon>
-            &nbsp;(0761) 962125
-          </p>
-          <p>
-            <ion-icon name="navigate"></ion-icon>
-            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/c6a8ZCqTuB5NGDR19">View Location</a>
-          </p>
+      <!-- Main Stores Section -->
+      <div class="stores-container">
+        <!-- Erin's list -->
+        <div class="erinslist">
+          <ul>
+            <li><a class="active" href="#pekanbaru" id="pekanbaruChooser" onclick="myFunction(0)">Pekanbaru</a></li>
+            <li><a href="#jakarta" id="jakartaChooser" onclick="myFunction(1)">Jakarta</a></li>
+            <li><a href="#bali" id="baliChooser" onclick="myFunction(2)">Bali</a></li>
+            <li><a href="#bandung" id="bandungChooser" onclick="myFunction(3)">Bandung</a></li>
+          </ul>
         </div>
-      </div> 
-
-      <!-- Bali -->
-      <div class="card card-location bali-store">
-        <img class="card-img-top" src="assets/Beachwalk.jpg" alt="The Pilgrim Beachwalk Bali">
-        <div class="card-body">
-          <h4 class="card-title">The Pilgrim Beachwalk Bali</h4>
-          <p class="card-text">
-            Jl. Pantai Kuta, Kuta, Kec. Kuta Sel., Kabupaten Badung, Bali 80361
-          </p>
-          <p>
-            <ion-icon name="call"></ion-icon>
-            &nbsp;(0361) 868124
-          </p>
-          <p>
-            <ion-icon name="navigate"></ion-icon>
-            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/xmMD1Ao2uZ1TQrsFA">View Location</a>
-          </p>
-        </div>
-      </div> 
   
-      <!-- Bandung -->
-      <div class="card card-location bandung-store">
-        <img class="card-img-top" src="assets/Bandung.jpg" alt="The Pilgrim FCL Bandung">
-        <div class="card-body">
-          <h4 class="card-title">The Pilgrim FCL Bandung</h4>
-          <p class="card-text">
-            Jl. Peta No.241, Suka Asih, Kec. Bojongloa Kaler, Kota Bandung, Jawa Barat 40232
-          </p>
-          <p>
-            <ion-icon name="call"></ion-icon>
-            &nbsp;(022) 6328595
-          </p>
-          <p>
-            <ion-icon name="navigate"></ion-icon>
-            &nbsp;<a class="view-loc" href="https://maps.app.goo.gl/7skHE5eZ8RfZCpQs5">View Location</a>
-          </p>
-        </div>
+        <!-- Infobox -->
+        <section class="infobox-container">
+          <main class="infobox">
+            <h2 id="infobox-title">The Pilgrim Pekanbaru</h2>
+            <a id="infobox-map-url" href="https://maps.app.goo.gl/eKTjtJXXxMcxJFn9A" target="_blank"><img id="infobox-img" src="assets/Mal-Pekanbaru.jpg"></a>
+            <div class="infobox-data">
+              <i class="fa-solid fa-house" aria-hidden="true"></i>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <p id="infobox-address" class="address">Jl. Jend. Sudirman No.123, Kota Tinggi, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28112</p>
+              <p id="infobox-phone-num" class="phone-num">(0761) 853123</p>
+            </div>
+          </main>
+        </section>
       </div>
-
-      <div class="bottom-whitespace"></div>
     </div>
+
+    <div class="whitespace"></div>
 
     <!-- Footer -->
     <footer class="mt-auto">
@@ -220,6 +163,10 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
+    <!-- Reveal JS -->
     <script src="reveal.js"></script>
+
+    <!-- Stores JS -->
+    <script src="stores.js"></script>
   </body>
 </html>
