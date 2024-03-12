@@ -683,6 +683,12 @@ textarea {
     }
 }
 
+@media (max-width: 50rem) {
+    .cart-icon {
+        max-width: 60px;
+    }
+}
+
 /* Search */
 
 .queries-container {
