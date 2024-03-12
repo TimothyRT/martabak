@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; URL=login.html" />
     <title>Voucher</title>
     
     <!-- Font Awesome CSS -->
@@ -40,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="stores.html">Stores</a>
@@ -52,84 +53,15 @@
               <a class="nav-link" href="index.html#contact-us">Contact</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="d-flex" action="search.html" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
             <button class="btn btn-custom search" type="submit">Search</button>
-            <button class="btn btn-custom login" type="submit">Login</button>
+            <a href="login.html" class="btn btn-custom login" role="button">Login</a>
           </form>
         </div>
       </div>
     </nav>
-
-    <!-- Top bar -->
-    <div class="container-fluid mt-3 top-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>Rewards</li>
-      </ul>
-      <h2>Klaim Voucher</h2>
-    </div>
-
-    <div class="rewards-whitespace"></div>
-
-    <!-- Content -->
-    <div class="center-container very-thick">
-
-      <div class="rewards-main-container">
-
-        <!-- Side bar -->
-        <div class="rewards-card-info">
-          <!-- My Points; ?? Pts -->
-          <table>
-            <tr>
-              <td rowspan="2"><img class="rewards-info-starry" src="assets/Star.svg"></td>
-              <td><h3 class="rewards-card-info-heading">My Points</h3></td>
-            </tr>
-            <tr>
-              <td><h2 class="rewards-card-info-heading">30 Pts</h2></td>
-            </tr>
-          </table>
-          
-          <hr class="solid">
-
-          <p class="rewards-card-info-text">Ayo berbelanja dan dapatkan bonus poin!</p>
-          <p class="rewards-card-info-text"><strong>10 Pts = Rp 50.000</strong></p>
-
-          <a class="general-button-short" href="menu.html" role="button">
-            Belanja
-          </a>
-        </div>
-
-        <!-- Vouchers -->
-        <ul class="rewards-vouchers-container">
-          <script>
-            var displayData = {
-              'file': ["25", "50", "Tumbler", "Cupcake", "Milkshake"],
-              'name': ["Voucher Diskon Rp 25,000,-", "Voucher Diskon Rp 50,000,-", "Free Totebag & Tumbler", "Free Cupcakes", "Free Milkshake"]
-            };
-
-            for (i = 0; i < displayData['file'].length; i++) {
-              document.write(
-                "<li class=\"rewards-item\">" +
-                "  <button class=\"rewards-card\" for=\"modal-1\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModal\">" +
-                "    <div class=\"rewards-card-image\">" +
-                "      <img src=\"assets/Voucher - " + displayData['file'][i] + ".png\">" +
-                "    </div>" +
-                "    <div class=\"rewards-card-content\">" +
-                "    <h2 class=\"rewards-card-title\">" + displayData['name'][i] + "</h2>" +
-                "    </div>" +
-                "  </button>" +
-                "</li>"
-              );
-            }
-          </script>
-        </ul>
-        
-      </div>
-
-    </div>
-
-    <div class="rewards-whitespace"></div>
+    <!-- Navbar END -->
   
     <!-- Footer -->
     <footer class="mt-auto">
@@ -138,7 +70,7 @@
           <div class="col-md-4 footer-column">
             <img class="footer-logo" src="assets/LogoMartabak - BLACK.png">
           </div>
-  
+
           <div class="col-md-4 footer-column">
             <ul class="nav flex-column">
               <li class="footer-nav-item">
@@ -155,7 +87,7 @@
               </li>
             </ul>
           </div>
-  
+
           <div class="col-md-4 footer-column">
             <ul class="nav flex-column">
               <li class="footer-nav-item">
@@ -163,7 +95,7 @@
               </li>
               <li class="footer-nav-item">
                 <span class="nav-link">
-                  <i class="fa fa-phone"></i> +62 896-17548012
+                  <i class="fa fa-phone"></i> &#726;62 896-17548012
                 </span>
               </li>
               <li class="footer-nav-item">
@@ -192,10 +124,7 @@
         </div>
       </div>
     </footer>
-    
-    <!-- Cart Icon -->
-    <a href="cart.html"><img class="cart-icon" src="assets/Cart.png"></a>
-
-    <script src="reveal.js"></script>
+    <p class="attrib">Sumber gambar: <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank">commons.wikimedia.org</a></p>
+    <!-- Footer END -->
   </body>
 </html>
