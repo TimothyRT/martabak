@@ -1017,8 +1017,8 @@ h2.rewards-card-info-heading {
     color: var(--main-text-color);
     font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 2px;
     margin: 0;
+    text-align: center;
 }
 
 /* Cart page */
@@ -1077,6 +1077,10 @@ h2.rewards-card-info-heading {
     .cart-content-ite, .cart-content-subt {
         font-size: 0.8rem;
     }
+}
+
+.cart-content-qty {
+    min-width: 5.2rem;
 }
 
 .cart-content-qty-select {
