@@ -1090,7 +1090,7 @@ h2.rewards-card-info-heading {
     grid-template-columns: [col1] 1rem [col2] 3rem [col3] 1rem;
     grid-template-areas:
         "plus qty minus";
-    width: 5rem;
+    width: 5.2rem;
 }
 
 .cart-content-qty-select>button {
