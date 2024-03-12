@@ -75,15 +75,15 @@
 
                 <td class="cart-content-qty">
                   <span class="cart-content-qty-select">
-                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="plus" onclick="increasePrice()">+</button>
 
-                    <input type="number" min="1" value="1">
+                    <input id="quantity" type="number" min="1" value="1">
                     
-                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                    <button class="minus" onclick="decreasePrice()">-</button>
                   </span>
                 </td>
 
-                <td class="cart-content-subt">
+                <td id="final-price" class="cart-content-subt">
                   Rp20.000,-
                 </td>
 
@@ -191,5 +191,33 @@
     <!-- Footer END -->
 
     <script src="reveal.js"></script>
+
+    <script>
+      let cumulative = 20000;
+
+      function increasePrice() {
+        document.getElementById("quantity").stepUp();
+        cumulative += 20000;
+        resetDisplay();
+      }
+
+      function decreasePrice() {
+        document.getElementById("quantity").stepDown();
+        if (cumulative > 20000) {
+          cumulative -= 20000;
+        }
+        resetDisplay();
+      }
+
+      let cur = new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'IDR',
+      });
+
+      function resetDisplay() {
+        document.getElementById("final-price").innerHTML = `${cur.format(cumulative)}`;
+      }
+      
+    </script>
   </body>
 </html>
