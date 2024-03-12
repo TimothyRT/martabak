@@ -197,15 +197,13 @@
 
       function increasePrice() {
         document.getElementById("quantity").stepUp();
-        cumulative += 20000;
+        cumulative = document.getElementById("quantity").valueAsNumber * 20000;
         resetDisplay();
       }
 
       function decreasePrice() {
         document.getElementById("quantity").stepDown();
-        if (cumulative > 20000) {
-          cumulative -= 20000;
-        }
+        cumulative = document.getElementById("quantity").valueAsNumber * 20000;
         resetDisplay();
       }
 
