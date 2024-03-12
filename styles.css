@@ -622,7 +622,19 @@ textarea {
 }
 
 .general-button:not(.general-button-inline) {
+    color: var(--main-text-color);
     display: block;
+}
+
+.invis-button {
+    background: none;
+    border: none;
+    color: var(--main-text-color);
+    width: 100%;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .general-arrow::after {
@@ -649,6 +661,73 @@ textarea {
 }
 
 /* Search */
+
+.queries-container {
+    margin: 2rem auto;
+    width: 95%;
+}
+
+.queries-container a {
+    text-decoration: none;
+}
+
+.queries-container .query {
+    background-color: var(--container-bg-color);
+    border-radius: 0.5rem 2rem;
+    box-shadow: 0.25em 0.25em 0.5em var(--main-text-color);
+    cursor: pointer;
+    display: grid;
+    grid-template-areas: 
+        "img text";
+    grid-template-columns: 40% auto;
+    
+    &:hover {
+        -webkit-transform: scale(1.01,1.01);
+    }
+}
+
+.queries-container .query>.query-img {
+    border-radius: 0 0 0 2rem;
+    grid-area: img;
+    width: 100%;
+}
+
+.queries-container .query>.query-text {
+    margin: 0.8rem 1rem;
+    grid-area: text;
+}
+
+.queries-container .query h3 {
+    color: var(--main-text-color);
+    font-weight: 600;
+}
+
+.queries-container .query h4 {
+    background-color: var(--highlight-bg-color);
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--box-border-color);
+    color: var(--main-text-color);
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 2% 3%;
+
+    &:hover {
+        background-color: var(--highlight-dark-bg-color);
+        font-weight: 700;
+    }
+}
+
+.end-results {
+    color: var(--main-text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.end-results::before, 
+.end-results::after {
+    content: "\00a0-\00a0"
+}
 
 /* Account (register & login) */
 
