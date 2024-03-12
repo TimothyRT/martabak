@@ -49,7 +49,7 @@
       <div class="account-container">
         
         <!-- Register form -->
-        <form method="POST">
+        <form action="register-complete.html">
           <h1>Lengkapi Profil</h1>
           <p>Mohon lengkapi profil Anda dengan data yang valid</p>
           
@@ -72,7 +72,11 @@
 
           <input class="account-input" type="password" name="account_c_password" placeholder="Konfirmasikan kata sandi" id="id_account_c_password" required>
           
-          <a class="general-button general-link" href="#" role="button" type="submit"><strong>Lanjutkan</strong></a>
+          <a class="general-button general-link">
+            <button class="invis-button" type="submit">
+              <strong>Lanjutkan</strong>
+            </button>
+          </a>
         </form>
       </div>
 
